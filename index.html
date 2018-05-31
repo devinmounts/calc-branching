@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src= "https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculator</h1>
+      <div id="calc-container">
+      <button class="btn btn-info" type="button" id="1">1</button>
+      <button class="btn btn-info" type="button" id="2">2</button>
+      <button class="btn btn-info" type="button" id="3">3</button>
+      <button class="btn btn-info" type="button" id="C">C</button>
+      <br>
+      <button class="btn btn-info" type="button" id="4">4</button>
+      <button class="btn btn-info" type="button" id="5">5</button>
+      <button class="btn btn-info" type="button" id="6">6</button>
+      <button class="btn btn-info" type="button" id="plus">+</button>
+      <br>
+      <button class="btn btn-info" type="button" id="7">7</button>
+      <button class="btn btn-info" type="button" id="8">8</button>
+      <button class="btn btn-info" type="button" id="9">9</button>
+      <button class="btn btn-info" type="button" id="minus">-</button>
+      <br>
+      <button class="btn btn-info" type="button" id="0">0</button>
+      <button class="btn btn-info" type="button" id="equals">=</button>
+      <button class="btn btn-info" type="button" id="times">x</button>
+      <button class="btn btn-info" type="button" id="divided-by">/</button>
+    </div>
+
+      <form id="calculator">
+        <div class="form-group">
+          <label for="input1">1st number:</label>
+          <input id="input1" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="input2">2nd number:</label>
+          <input id="input2" class="form-control" type="text">
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="add" checked>
+            add
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="subtract">
+            subtract
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="multiply">
+            multiply
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="divide">
+            divide
+          </label>
+        </div>
+        <button type="submit" class="btn">Go!</button>
+      </form>
+      <div id="output">
+
+      </div>
+    </div>
+  </body>
+</html>
